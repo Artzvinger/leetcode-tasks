@@ -1,6 +1,6 @@
 /**
  * Type: Array / Hash Table / Easy
- * [Hack] Sales by Match (Sock Merchant)
+ * [HackerRank] Sales by Match (Sock Merchant)
  *
  * 📌 Условие: Дан массив чисел, где каждое число - цвет носка.
  *             Найдите количество пар носков одного цвета.

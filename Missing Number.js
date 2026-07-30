@@ -18,13 +18,13 @@
  * @return {number} - пропущенное число
  */
 
-function findMissingBySumm(nums){
-    for(let i=0; i < nums.length; i++){
-        if (nums[i]+1 !== nums[i+1]){
-            return nums[i]+1;
-        }
-    }
+function findMissingBySumm(nums) {
+    let n = nums.length;
+    let expectedSum = n * (n + 1) / 2;
+    let actualSum = nums.reduce((a, b) => a + b, 0);
+    return expectedSum - actualSum;
 }
+
 function findMissingBySumm2(nums) {
     let numsLength = nums.length;
     const sum = numsLength*(numsLength+1)/2;
