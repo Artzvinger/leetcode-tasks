@@ -1,5 +1,5 @@
 function palindrome(str){
-    str = str.replaceAll(" ", '');
+    str = str.replace(/[^a-zA-Z0-9]/g, '');
     let i = 0;
     let j = str.length - 1;
     while (i < j){
@@ -9,6 +9,5 @@ function palindrome(str){
         i++;
         j--;
     }
-    return true
+    return true;
 }
-console.log(palindrome(' asDd sA'));
