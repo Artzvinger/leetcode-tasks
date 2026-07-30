@@ -1,0 +1,9 @@
+function reverseBits(n){
+    let result = 0;
+    let binary = n.toString(2).padStart(32, "0");
+    console.log(binary);
+    result = binary.split("").reverse().join("")
+    console.log(result);
+    return result;
+}
+reverseBits(1)
