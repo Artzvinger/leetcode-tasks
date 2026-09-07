@@ -15,7 +15,7 @@
  * @param {ListNode} l2 - голова второго отсортированного списка
  * @return {ListNode} - голова объединенного отсортированного списка
  */
-function mergeTwoLists(l1, l2) {
+var mergeTwoLists = function(l1, l2) {
     let dummyHead = new ListNode(-1);
     let current = dummyHead;
 
@@ -32,4 +32,4 @@ function mergeTwoLists(l1, l2) {
 
     current.next = l1 !== null ? l1 : l2;
     return dummyHead.next;
-}
+};

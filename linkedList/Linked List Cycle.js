@@ -15,7 +15,7 @@
  * @param {ListNode} head - голова связного списка
  * @return {boolean} - true, если цикл есть; false, если нет
  */
-function hasCycle(head) {
+var hasCycle = function(head) {
     let slow = head;
     let fast = head;
 
@@ -28,4 +28,4 @@ function hasCycle(head) {
         }
     }
     return false;
-}
+};

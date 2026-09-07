@@ -9,7 +9,6 @@
  * 🧠 Идея: Находим середину списка через медленный и быстрый указатели.
  *          Разворачиваем вторую половину списка.
  *          Сравниваем первую половину с развернутой второй.
- *          Восстанавливаем список (опционально).
  *
  * ⏱ Сложность: O(n) по времени, O(1) по памяти.
  *
@@ -19,7 +18,6 @@
 var isPalindrome = function(head) {
     if (!head || !head.next) return true;
 
-    // 1. Находим середину списка (slow - середина)
     let slow = head;
     let fast = head;
 
@@ -28,7 +26,6 @@ var isPalindrome = function(head) {
         fast = fast.next.next;
     }
 
-    // 2. Разворачиваем вторую половину
     let prev = null;
     let current = slow;
     let next;
@@ -39,6 +36,7 @@ var isPalindrome = function(head) {
         prev = current;
         current = next;
     }
+
     let left = head;
     let right = prev;
 

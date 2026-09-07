@@ -14,7 +14,7 @@
  * @param {ListNode} head - голова связного списка
  * @return {ListNode} - голова развернутого списка
  */
-let reverseList = function(head) {
+var reverseList = function(head) {
     let current = head;
     let prev = null;
     let next;

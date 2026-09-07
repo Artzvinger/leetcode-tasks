@@ -19,7 +19,7 @@
  */
 var addTwoNumbers = function(l1, l2) {
     let dummyHead = new ListNode(0);
-    let current = dummy;
+    let current = dummyHead;
     let carry = 0;
 
     while (l1 !== null || l2 !== null || carry !== 0) {
@@ -41,5 +41,5 @@ var addTwoNumbers = function(l1, l2) {
         current.next = new ListNode(sum);
         current = current.next;
     }
-    return dummy.next;
+    return dummyHead.next;
 };
