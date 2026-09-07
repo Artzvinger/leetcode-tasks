@@ -1,6 +1,6 @@
 # 📚 LeetCode Tasks Repository
 
-> Решения задач с LeetCode, HackerRank и других платформ с подробными описаниями и комментариями.
+Решения задач с LeetCode, HackerRank и других платформ.
 
 
 ## 📊 Статистика
